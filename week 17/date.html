@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Комментарии</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Оставьте ваш комментарий</h1>
+      <form id="comment-form">
+        <div class="display-name-container">
+          <h3>Показывать мое имя:</h3>
+          <label for="show-name-yes">Да</label>
+          <input
+            type="radio"
+            id="show-name-yes"
+            name="show-name"
+            value="yes"
+            checked
+          />
+          <label for="show-name-no">Нет</label>
+          <input type="radio" id="show-name-no" name="show-name" value="no" />
+        </div>
+        <label for="name-input">Имя:</label>
+        <input type="text" id="name-input" name="name" required />
+        <label for="avatar-input">Ссылка на аватар:</label>
+        <input type="text" id="avatar-input" name="avatar" required />
+        <label for="message-input">Сообщение:</label>
+        <textarea id="message-input" name="message" required></textarea>
+        <input type="submit" value="Добавить комментарий" />
+      </form>
+      <div class="comments" id="comments-section">Чат</div>
+      <div class="comments" id="comments-container"></div>
+    </div>
+    <script src="date.js"></script>
+  </body>
+</html>
